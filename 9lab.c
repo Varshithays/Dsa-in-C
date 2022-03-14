@@ -25,7 +25,7 @@ poly attach(int c,int x,int y,int z,poly head)
     temp->link=head;
     return head;
 }
-poly head(poly head)
+poly read(poly head)
 {
     int ch=1;
     int cf,x,y,z;
@@ -117,7 +117,7 @@ void evaluate(poly head)
     }
     printf("polynomial result is: %d",res);
 }
-int main()
+void main()
 {
     int ch;
     poly eval,first,sec,res;
@@ -153,5 +153,5 @@ int main()
         case 3 : exit(0);
         default : printf("invalid choice!!!\n");
     }
-    return 0;
+    
 }
